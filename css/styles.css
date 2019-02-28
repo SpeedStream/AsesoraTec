@@ -1,0 +1,64 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* titulos secciones */
+.titulo-seccion{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+/* iconos */
+.features-icons-item {
+  	max-width: 20rem;
+}
+
+.features-icons-item .features-icons-icon {
+  	height: 7rem;
+}
+
+.features-icons-item .features-icons-icon i {
+	width: 100%;
+	font-size: 4.5rem;
+}
+
+
+/* seccion formulario */
+.seccion-formularo-index {
+	position: relative;
+	background: url("../img/biblioteca.jpg") no-repeat center center;
+	background-size: cover;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.seccion-formularo-index h1 {
+	font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+	.seccion-formularo-index {
+    	padding-top: 12rem;
+    	padding-bottom: 12rem;
+  	}
+  	.seccion-formularo-index h1 {
+    	font-size: 3rem;
+  	}
+}
+
+/* footer */
+.page-footer{
+	background-color: #b1bace;
+}
+
+/* formulario registro */
+.formulario_registro{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.formulario_registro .row{
+    margin-left: 0;
+    margin-right: 0;
+}
