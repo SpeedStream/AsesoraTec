@@ -3,6 +3,10 @@ html {
     min-height: 100%;
 }
 
+.h1Title{
+  background-color: rgba(231, 93, 20, .8)
+}
+
 /* titulos secciones */
 .titulo-seccion{
 	padding-top: 5rem;
