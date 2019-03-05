@@ -49,7 +49,17 @@ html {
 
 /* footer */
 .page-footer{
-	background-color: #b1bace;
+	background-color: #343a40;
+}
+.letraFooter{
+  color: #f8f9fa;
+}
+.linksFooter{
+  color: #dd7500;
+  text-decoration: none;
+}
+.linksFooter:hover{
+  color: #dd7500;
 }
 
 /* formulario registro */
