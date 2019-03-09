@@ -46,7 +46,7 @@
 		                <div class="card">
 	                        <div class="card-header text-center">Registro</div>
 	                        <div class="card-body">
-	                            <form class="needs-validation">
+	                            <form action="#" onsubmit="getFormData()" class="needs-validation">
 
 	                                <div class="form-group row">
 	                                    <label for="nombre_completo" class="col-md-4 col-form-label text-md-right">Nombre completo</label>
@@ -142,10 +142,38 @@
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<!-- Bootstrap JS -->
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-		<!-- Manda a llamar a php para validar -->
+		<!-- Servicio REST llamar a php para validar -->
 		<script type="text/javascript">
 
-			
+			function getFormData(){
+				var nombre = document.getElementById('nombre_completo').value;
+				var email = document.getElementById('email').value;
+				var celular = document.getElementById('celular').value;
+				var contrasena = document.getElementById('contrasena').value;
+				var confirmacion_contrasena = document.getElementById('confirmacion_contrasena').value;
+
+				$.ajax({
+                    type: "POST",
+                    url: "validate_form_registro.php",
+                    data: {
+                            'nombre':nombre,
+                            'email':email,
+                            'celular':celular,
+                            'contrasena':contrasena,
+                            'confirmacion_contrasena':confirmacion_contrasena
+                        },
+                    success: function(data) {
+                    	if (data == "true") {
+                    		alert("Se realizó el registro satisfactoriamente");
+                    		/*redirigir a su perfil aquí o en el action del form*/
+                    	}
+                		else{
+                			alert("No se pudo realizar el registro");
+                		}
+
+                    }
+                });
+			}
 		</script>
 	</body>
 </html>
