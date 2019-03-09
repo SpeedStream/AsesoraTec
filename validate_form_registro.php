@@ -7,5 +7,5 @@
 
 	/*VALIDAR TEXTO Y ENVIAR RESPUESTA*/
 	/*if todo salio bien = true, else = false*/
-	echo("true");
+	echo("false");
 ?>
