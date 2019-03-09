@@ -13,7 +13,6 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<!-- Iconos font-awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 	</head>
 	<body>
 
@@ -47,45 +46,46 @@
 		                <div class="card">
 	                        <div class="card-header text-center">Registro</div>
 	                        <div class="card-body">
-	                            <form name="" action="" method="">
+	                            <form class="needs-validation">
+
 	                                <div class="form-group row">
 	                                    <label for="nombre_completo" class="col-md-4 col-form-label text-md-right">Nombre completo</label>
 	                                    <div class="col-md-6">
-	                                        <input type="text" id="nombre_completo" class="form-control" name="full-name">
+	                                        <input type="text" id="nombre_completo" class="form-control" required>
 	                                    </div>
 	                                </div>
 
 	                                <div class="form-group row">
 	                                    <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail</label>
 	                                    <div class="col-md-6">
-	                                        <input type="email" id="email" class="form-control" name="email-address">
+	                                        <input type="email" id="email" class="form-control" required>
 	                                    </div>
 	                                </div>
 
 	                                <div class="form-group row">
 	                                    <label for="celular" class="col-md-4 col-form-label text-md-right">No. Celular</label>
 	                                    <div class="col-md-6">
-	                                        <input type="text" id="celular" class="form-control" name="username">
+	                                        <input type="text" id="celular" class="form-control" required>
 	                                    </div>
 	                                </div>
 
 	                                <div class="form-group row">
 	                                    <label for="contrasena" class="col-md-4 col-form-label text-md-right">Contraseña</label>
 	                                    <div class="col-md-6">
-	                                        <input type="password" id="contrasena" class="form-control">
+	                                        <input type="password" id="contrasena" class="form-control" required>
 	                                    </div>
 	                                </div>
 
 	                                <div class="form-group row">
 	                                    <label for="confirmacion_contrasena" class="col-md-4 col-form-label text-md-right">Confirmar constraseña</label>
 	                                    <div class="col-md-6">
-	                                        <input type="password" id="confirmacion_contrasena" class="form-control">
+	                                        <input type="password" id="confirmacion_contrasena" class="form-control" required>
 	                                    </div>
 	                                </div>
 
 									<div class="col-md-8 offset-md-4">
 								    	<a href="filtro_registro.html" class="btn btn-danger">Cancelar</a>
-								    	<a href="#" class="btn btn-primary">Registrar</a>
+								    	<button class="btn btn-primary" type="submit">Registrar</button>
 									</div>
 
 	                        	</form>
@@ -142,5 +142,10 @@
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<!-- Bootstrap JS -->
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<!-- Manda a llamar a php para validar -->
+		<script type="text/javascript">
+
+			
+		</script>
 	</body>
 </html>
