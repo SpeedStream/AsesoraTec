@@ -166,11 +166,10 @@
                   		//console.log(data);
                     	if (data === "true") {
                     		alert("Se realizó el registro satisfactoriamente");
-                    		//alert(data);
-                    		/*redirigir a su perfil aquí o en el action del form con su session y id de usuario*/
+                    		/*los datos ingresados pasan la validacion, realizar siguiente accion*/
                     	}
                 		else{
-                			alert("No se pudo realizar el registro");
+                			alert("No se pudo realizar el registro debido a que "+String(data));
                 			//data => error
                 		}
 
