@@ -3,6 +3,14 @@ html {
     min-height: 100%;
 }
 
+.h1Title{
+  background-color: rgba(231, 93, 20, .8)
+}
+
+.mensaje-error{
+  color: red;
+}
+
 /* titulos secciones */
 .titulo-seccion{
 	padding-top: 5rem;
@@ -49,7 +57,17 @@ html {
 
 /* footer */
 .page-footer{
-	background-color: #b1bace;
+	background-color: #343a40;
+}
+.letraFooter{
+  color: #f8f9fa;
+}
+.linksFooter{
+  color: #dd7500;
+  text-decoration: none;
+}
+.linksFooter:hover{
+  color: #dd7500;
 }
 
 /* formulario registro */
