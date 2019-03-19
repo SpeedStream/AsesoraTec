@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+# Desactiva multivistas (requiere extensiones de archivos)
+Options -Multiviews
+
+# Si la carpeta(d) o archivo(f) ingresado no existe, redirecciona a index.php
+# Todos los valores se guardan en la variable url despues de index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+</IfModule>
