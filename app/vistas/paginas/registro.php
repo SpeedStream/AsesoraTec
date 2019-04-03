@@ -43,7 +43,7 @@
 	                                </div>
 
 	                                <div class="form-group row">
-	                                    <label for="confirmacion_contrasena" class="col-md-4 col-form-label text-md-right">Confirmar constraseña</label>
+	                                    <label for="confirmacion_contrasena" class="col-md-4 col-form-label text-md-right">Confirmar contraseña</label>
 	                                    <div class="col-md-6">
 	                                        <input type="password" id="confirmacion_contrasena" class="form-control" required>
 	                                        <div id="error-confirmacion_contrasena" class="mensaje-error"></div>

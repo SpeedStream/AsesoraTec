@@ -1,14 +1,14 @@
 <?php
 
 // Libreria con metodos para vlidar registro
-class Validacion{
+class Validacion_registro{
 
 	// Descripcion Errores
 	private $error00 = 'La longitud del nombre debe ser de 2 a 127 caracteres';
 	private $error01 = 'El formato del correo no es correcto';
 	private $error02 = 'La longitud del email debe ser de 3 a 320 caracteres';
-	private $error03 = 'La longitud del celular debe ser de 10 digitos';
-	private $error04 = 'El número celular solo puede contener digitos (0-9)';
+	private $error03 = 'La longitud del celular debe ser de 10 dígitos';
+	private $error04 = 'El número celular solo puede contener dígitos (0-9)';
 	private $error05 = 'Las contraseñas no coinciden';
 	private $error06 = 'La longitud de la contraseña debe ser de 8 a 16 caracteres';
 	private $error07 = "El perfil debe ser 'alumno' o 'asesor'";

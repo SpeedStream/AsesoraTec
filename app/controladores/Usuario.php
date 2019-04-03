@@ -58,8 +58,8 @@ class Usuario extends Controlador{
 	// Valida datos de registro
 	private function _validar_registro(){
 		// Crea instancia de libreria Validacion
-		require_once RUTA_APP .'/librerias/Validacion.php';
-		$validacion = new Validacion;
+		require_once RUTA_APP .'/librerias/Validacion_registro.php';
+		$validacion = new Validacion_registro;
 
 		// Regresa TRUE o arreglo con errores
 		return $validacion->validar_registro();
