@@ -9,7 +9,7 @@ define('DB_PASSWORD', '');
 define('RUTA_APP', dirname(dirname(__FILE__)));
 
 // Ruta URL (Carpeta public)
-define('RUTA_URL', 'http://localhost/eduapp');
+define('RUTA_URL', 'http://localhost/eduapp/public');
 
 // Nombre sitio
-define('NOMBRESITIO', 'Aerobot-EduApp');
+define('NOMBRESITIO', 'Aerobot-EduAp');
