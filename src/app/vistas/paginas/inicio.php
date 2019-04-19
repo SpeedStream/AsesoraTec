@@ -45,7 +45,7 @@
               			<i class="fa fa-calendar-alt"></i>
             		</div>
             		<h3>Agenda</h3>
-            		<p class="lead">Ponte en contacto con el asesor de tu prefernecia y establescan una hora y lugar</p>
+            		<p class="lead">Ponte en contacto con el asesor de tu preferencia y establescan una hora y lugar</p>
           		</div>
         	</div>
 
@@ -137,7 +137,7 @@
         	<div class="col-lg-4">
           		<div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
             		<a href="#" class="btn btn-block btn-lg btn-primary">Idiomas</a>
-            		<p class="lead">Inglés, Español, Alemán, Frances, etc... </p>
+            		<p class="lead">Inglés, Español, Alemán, Francés, etc... </p>
           		</div>
         	</div>
      	</div>
@@ -148,7 +148,7 @@
 <!------------------------- registrar asesor -------------------------->
 <section class="text-center">
     <div class="container">
-    	<h2 class="titulo-seccion">Registrate como asesor</h2>
+    	<h2 class="titulo-seccion">Regístrate como asesor</h2>
 
     	<div class="row">
         	<div class="col-xl-5 mx-auto">

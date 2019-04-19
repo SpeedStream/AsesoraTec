@@ -60,4 +60,32 @@ class Usuario_model{
 			// echo $e;
 		}
 	}
+
+	// Valida match usuario - contrasena
+	public function validar_contrasena($email, $contrasena){
+		// Alamcena hash de la contrasena
+		$hash_contrasena = "";
+
+		try{
+			// obtiene hash del registro segun email
+			$query = $this->conexion->prepare("SELECT Password FROM Usuarios WHERE Email = ? LIMIT 1");
+            $query->bindParam(1, $email, PDO::PARAM_STR);
+			$query->execute();
+			$this->conexion->cerrar();
+			$query = $query->fetch(PDO::FETCH_OBJ);
+
+			$hash_contrasena = $query ->Password;
+		}
+		catch(PDOException $e){
+			// echo $e;
+			return FALSE;
+		}
+
+		// Valida hash con contrasena ingresada
+		if (password_verify($contrasena, $hash_contrasena))
+			return TRUE;
+		
+		else
+			return FALSE;
+	}
 }
