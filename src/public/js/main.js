@@ -114,8 +114,8 @@ function validar_login(){
         success: function(data) {
             // Notificacion login exitoso
             if (data === "true") {
-                alert("Se inició sesión correctamente");
-                "<?php echo RUTA_URL .'/asesores';?>"
+                //alert("Se inició sesión correctamente");
+                window.location= "/eduapp/public/asesores";
             }
 
             // Notificacion de errores al 
