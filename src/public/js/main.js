@@ -115,6 +115,7 @@ function validar_login(){
             // Notificacion login exitoso
             if (data === "true") {
                 alert("Se inició sesión correctamente");
+                "<?php echo RUTA_URL .'/asesores';?>"
             }
 
             // Notificacion de errores al 
