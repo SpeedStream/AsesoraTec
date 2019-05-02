@@ -1,4 +1,3 @@
-	<div>	
 		<footer class="page-footer font-small">
 		    <div class="container text-center text-md-left">
 
@@ -37,7 +36,7 @@
 
 		    </div>
 		</footer>
-	</div>
+
 		<!-- jQuery JS -->
 		<script type="text/javascript" src="<?php echo RUTA_URL .'/js/jquery-3.3.1.min.js';?>"></script>
 		<!-- Bootstrap JS -->

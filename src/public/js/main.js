@@ -114,8 +114,7 @@ function validar_login(){
         success: function(data) {
             // Notificacion login exitoso
             if (data === "true") {
-                //alert("Se inició sesión correctamente");
-                window.location= "/eduapp/public/asesores";
+                alert("Se inició sesión correctamente");
             }
 
             // Notificacion de errores al 

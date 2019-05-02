@@ -26,24 +26,11 @@
 <!---------------------------- Resultados de asesores ---------------------------->
 <TABLE WIDTH="100%">
 	<TR>
-		<TD WIDTH="25%">
+		<TD WIDTH="100%">
 			<center>
-				<!---------------------------- Categorias recomendadas ---------------------------->
-				<a href="<?php echo RUTA_URL .'/asesores';?>" class="btn btn-secondary btn-lg btn-block">Todo</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/matematicas';?>" class="btn btn-secondary btn-lg btn-block">Matemáticas</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/fisica';?>" class="btn btn-secondary btn-lg btn-block">Física</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/informatica';?>" class="btn btn-secondary btn-lg btn-block">Informática</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/arte';?>" class="btn btn-secondary btn-lg btn-block">Arte</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/finanzas';?>" class="btn btn-secondary btn-lg btn-block">Finanzas</a>
-				<a href="<?php echo RUTA_URL .'/asesores/buscar/idiomas';?>" class="btn btn-secondary btn-lg btn-block">Idiomas</a>
+				<h1>Detalles asesor</h1>
 
-			</center>
-		</TD>
-		<TD WIDTH="75%">
-			<center>
-				<h1>Resultados búsqueda</h1>
-
-				<?php foreach ($datos['asesores'] as $asesor):?>
+				<?php foreach ($datos['asesor'] as $asesor):?>
 
 					<!---------------------------- Tarjeta asesor ---------------------------->
 					<div class="card">
@@ -61,15 +48,25 @@
 										<span class="glyphicon glyphicon-star"></span>
 										</center>
 									</TD>
-									<TD WIDTH="75%">
+
+									<TD WIDTH="50%">
 										<center>
 											<div class="card-body">
 												<h5 class="card-title"><?php echo $asesor['Municipio'] .", ". $asesor['Estado'];?></h5>
+												<br>
+												<strong>Área conocimiento: </strong>
+												<p class="card-text"><?php echo $asesor['AreaConocimiento'];?></p>
+												<strong>Especialidad: </strong>
+												<p class="card-text"><?php echo $asesor['Especialidad'];?></p>
+												<strong>Resumen: </strong>
 												<p class="card-text"><?php echo $asesor['Resumen'];?></p>
-												<a href="<?php echo RUTA_URL .'/asesores/detalles/'. $asesor['ID'];?>" class="btn btn-primary">Detalles</a>
+												<strong>Formas de pago: </strong>
+												<p class="card-text"><?php echo $asesor['FormasPago'];?></p>
+												<a href="<?php echo RUTA_URL .'/asesores/detalles/'. $asesor['ID'];?>" class="btn btn-primary">Contactar</a>
 											</div>
 										</center>
 									</TD>
+
 								</TR>
 							</TABLE>
 						</div>
